@@ -26,7 +26,7 @@ public class Airplane : MonoBehaviour
         // Simulates engine thrust, making the airplane accelerate forward.
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(-transform.forward * enginePower);
+            rb.AddForce(transform.forward * enginePower);
         }
 
         // 2. Lift Force - Simulates how airplanes gain altitude
